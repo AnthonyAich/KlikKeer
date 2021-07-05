@@ -14,6 +14,7 @@
     <div class="cirkel">
         <h2>Gelukkige verjaardag!!</h2>
         <h1 id="naamH1"></h1>
+        <p style="text-align: center; color: #2C2C2E;" id="aka">AKA: Beste biochemiste ever</p>
     </div>
     <img src="assets/images/taartje.png" class="taart foto" alt="taartje">
 
@@ -21,8 +22,18 @@
         let params = new URLSearchParams(location.search);
         let naam = params.get('p');
 
-        document.getElementById("naam").innerHTML = naam;
+        document.getElementById("naam").innerHTML = "Gelukkige verjaardag" + naam + " !!!";
         document.getElementById("naamH1").innerHTML = naam;
+
+        if (naam == "An-Sofie") {
+            document.getElementById("aka").innerHTML = "Aka: beste biochimiste ever!!";
+        }
+        if (naam == "Mara") {
+            document.getElementById("aka").innerHTML = "Aka: Mercu of Merco etc.";
+        }
+        if (naam == "Emma") {
+            document.getElementById("aka").innerHTML = "Aka: Fitness Girl!!";
+        }
     </script>
 
 </body>
