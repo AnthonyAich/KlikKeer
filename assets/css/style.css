@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto',
+        sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 0 3%;
+}
+
+a {
+    text-decoration: none;
+    color: #2E444F;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+li>img {
+    transform: translate3d(0px, -20px, 0px);
+}
+
+nav>ul {
+    margin-top: 25px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: #2E444F;
+}
+
+nav>ul:first-of-type {
+    width: 35%;
+}
+
+nav>ul:nth-of-type(2) {
+    width: 15%
+}
+
+
+.knop {
+    background-color: #2E444F;
+    color: #fff;
+    padding: 15px;
+    border-radius: 16px
+}
+
+.knop>img {
+    margin-right: 15px;
+    transform: translate3d(0px, 6px, 0px)
+}
+
+.bgBuilding {
+    background-image: url(../images/building.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 100%;
+    height: 75vh;
+    border-radius: 32px
+}
+
+.tekstIndex>h1 {
+    color: #2E444F;
+    margin-bottom: 80px;
+    line-height: 70px;
+    font-size: 46px;
+    width: 50%;
+}
+
+span {
+    color: #1E83B8;
+}
+
+.tekstIndex {
+    position: relative;
+    top: 30%;
+    left: 5%;
+}
+
+.qualiteiten {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.navHeader {
+    z-index: 8;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 32px;
+    box-shadow: 0px 20px 50px #2e444f9a;
+    transform: translate3d(0px, -50%, 0px);
+    background-color: #fff;
+}
+
+.navHeader>div:nth-of-type(2) {
+    background-color: #2E444F;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.navHeader>div:first-of-type {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.navHeader>div>article>div:nth-of-type(2) {
+    border: 2px solid #2E444F;
+    border-radius: 16px;
+    width: 80%;
+    height: 34px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 5px;
+    line-height: initial;
+
+}
+
+.navHeader>div>article>div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    color: #2E444F;
+    margin-left: 35%;
+    width: 30%;
+    font-size: 20px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.navHeader>div>article>div>img {
+    width: auto;
+    height: 30px;
+    margin-top: 15px;
+}
+
+input {
+    width: 90%;
+    margin-left: 5%;
+    border: none;
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+input:focus {
+    outline: none;
+}
+
+footer {
+    background-color: #2E444F;
+}
