@@ -2,100 +2,29 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Huisvinders</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="naam">Klik keer</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-  <main>
-    <header>
-      <nav>
-        <ul>
-          <li><img src="assets/images/logo.png" alt="logo" /></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Over ons</a></li>
-          <li><a href="#">Zoeken</a></li>
-          <li><a href="#">Contacteren</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">Inloggen</a></li>
-          <li><a class="knop" href="#">Aanmelden</a></li>
-        </ul>
-      </nav>
-      <div class="bgBuilding">
-        <div class="tekstIndex">
+    <img src="assets/images/vlaggetjes.png" class="foto" alt="vlaggetjes">
+    <div class="cirkel">
+        <h2>Gelukkige verjaardag!!</h2>
+        <h1 id="naamH1"></h1>
+    </div>
+    <img src="assets/images/taartje.png" class="taart foto" alt="taartje">
 
+    <script>
+        let params = new URLSearchParams(location.search);
+        let naam = params.get('p');
 
-          <h1>
-            Nog altijd op zoek naar uw nieuwe <br /><span>thuis</span> Wij kunnen u helpen!
-          </h1>
-          <a href="#" class="knop"><img src="assets/images/profile.png" alt="" />Contacteer ons!</a>
-        </div>
-      </div>
+        document.getElementById("naam").innerHTML = naam;
+        document.getElementById("naamH1").innerHTML = naam;
+    </script>
 
-      <section class="navHeader">
-        <div>
-          <article>
-            <div>
-              <h2>Locatie</h2>
-
-              <img src="assets/images/location.png" alt="locationlogo" />
-            </div>
-            <div><input type="text" placeholder="Geef locatie in." /></div>
-          </article>
-          <article>
-            <div>
-              <h2>Type</h2>
-              <img src="assets/images/home.png" alt="home logo" />
-            </div>
-            <div><input type="text" placeholder="Geef type in." /></div>
-          </article>
-          <article>
-            <div>
-              <h2>Prijs</h2>
-              <img src="assets/images/buy.png" alt="" />
-            </div>
-            <div><input type="text" placeholder="Geef prijs in." /></div>
-          </article>
-        </div>
-        <div><img src="assets/images/search.png" alt="search" /></div>
-      </section>
-    </header>
-    <section class="qualiteiten">
-      <article>
-        <img src="assets/images/homeBold.png" alt="Home bold" />
-        <h2>Uw droomhuis vinden</h2>
-        <p>
-          Zoekt u een huis, een apartement een kleine studio? Alles is
-          mogelijk bij ons. Onze medewerkers hebben al duizenden huizen
-          verocht.
-        </p>
-      </article>
-      <article>
-        <img src="assets/images/users.png" alt="users" />
-        <h2>Team die naar u luisterd</h2>
-        <p>
-          Een team van geboeide medewerkers staan altijd klaar om te helpen. 7
-          dagen per week kunnen we u helpen zowel via telefoon of mail.
-        </p>
-      </article>
-      <article>
-        <img src="assets/images/lock.png" alt="lock" />
-        <h2>100% veilige afhandeling</h2>
-        <p>
-          Uw transactie wordt altijd vertrouwelijk behandeld en u krijgt
-          altijd korting, wat de beste prijzen oplevert.
-        </p>
-      </article>
-    </section>
-  </main>
-  <footer>
-    <p>&copy;Huisvinders</p>
-    <a href="#" target="_blank"><img src="assets/images/instagram.png" alt="insta" /></a>
-  </footer>
 </body>
 
 </html>
