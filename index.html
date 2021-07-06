@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="naam">Klik keer</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
 </head>
 
-<body>
+<body class="office-banner">
     <img src="assets/images/vlaggetjes.png" class="foto" alt="vlaggetjes">
     <div class="cirkel">
         <h2>Gelukkige verjaardag!!</h2>
@@ -34,6 +35,32 @@
         if (naam == "Emma") {
             document.getElementById("aka").innerHTML = "Aka: Best fitness Girl!";
         }
+
+        let colors = ["#1B8FC1", "#ED2195", "FFDA29"];
+
+        function frame() {
+            for (let i = 0; i < 10; i++) {
+                confetti({
+                    particleCount: 3,
+                    angle: 60,
+                    spread: 25,
+                    origin: {
+                        x: 0
+                    },
+                    colors: colors,
+                });
+                confetti({
+                    particleCount: 3,
+                    angle: 120,
+                    spread: 25,
+                    origin: {
+                        x: 1
+                    },
+                    colors: colors,
+                });
+            }
+        }
+        window.onload = frame();
     </script>
 
 </body>
