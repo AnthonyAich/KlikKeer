@@ -7,11 +7,13 @@
     margin: 0px;
     padding: 0px;
 }
+html {
+    width:100%;
+    max-width:350px;
+}
 
 body {
     background-color: #2C2C2E;
-    width:100%;
-    max-width:350px;
 }
 
 .cirkel {
