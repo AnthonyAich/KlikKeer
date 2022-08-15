@@ -42,7 +42,8 @@ h2 {
 }
 
 .foto {
-    width: 100%;
+    width:100%;
+    max-width:350px;
     position: absolute;
     top: 0%;
     /* position the top  edge of the element at the middle of the parent */
